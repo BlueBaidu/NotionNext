@@ -35,12 +35,13 @@ export const MenuListTop = props => {
   ]
 
   if (customNav) {
-    // links = links.concat(customNav);// 隐藏"Github"图标
-    const githubItem = customNav.find(item => item.name === 'Github')
-    if (githubItem) {
-      githubItem.show = false
-    }
     links = links.concat(customNav)
+    // 隐藏"Github"图标
+    // const githubItem = customNav.find(item => item.name === 'Github')
+    // if (githubItem) {
+    //   githubItem.show = false
+    // }
+    // links = links.concat(customNav)
   }
 
   // 如果 开启自定义菜单，则覆盖Page生成的菜单
